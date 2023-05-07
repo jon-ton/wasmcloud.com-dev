@@ -20,4 +20,4 @@ wasmCloud is designed around the following core tenets:
 
 You should not have to change your design, architecture, or your programming environment as you move from concept to production.
 
-**We're bringing bring _joy_ to building global-scale applications.**
+**We're bringing _joy_ to building global-scale applications.**
