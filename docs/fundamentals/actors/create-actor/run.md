@@ -77,18 +77,6 @@ and you should get the response:
 Hello World
 ```
 
-The actor accepts an optional parameter `name`, and uses it to change the greeting. (Notice the quotes around the url below).
-
-```shell
-curl "localhost:8087?name=Carol"
-```
-
-The response should be
-
-```text
-Hello Carol
-```
-
 _**Congratulations!**_ You've successfully created and run your first actor. Welcome to the world of boilerplate-free, simple distributed application development in the cloud, browser, and everywhere in between.
 
 Let's make a slight modification to the code, so you can see what it's like to go through a development iteration to compile and update the running code. Don't worry - this will be pretty quick.
