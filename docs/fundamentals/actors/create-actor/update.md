@@ -73,7 +73,13 @@ You should now see your actor with a `hot reloading` status badge, and you're re
 
 ### Making modifications (Rust)
 
-Our new actor has come pre-equipped with a message handler that generates a text string in the body of the response. By default, the text is "Hello World", and the greeting changes if the URL contains a name parameter. We will modify the business logic of the actor to select the greeting, using a second URL paramter. In this exercise, you will go through the process of editing code, recompiling, and updating the actor in a live running system.
+Our new actor has come pre-equipped with a message handler that generates a text string in the body of the response. By default, the text is "Hello World". We will modify the business logic of the actor to select the greeting, using a second URL paramter. In this exercise, you will go through the process of editing code, recompiling, and updating the actor in a live running system.
+
+Add the `form_urlencoded` crate as a dependency to the new actor by running the following command
+
+```shell 
+cargo add form_urlencoded
+```
 
 The new parameter that selects the greeting will be called `msg`. If msg is "hello" (or if there is no msg parameter), the greeting will be "Hello NAME". If msg is "bye", the greeting will be 'Goodbye NAME', and so on.
 
